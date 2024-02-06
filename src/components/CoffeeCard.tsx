@@ -1,7 +1,7 @@
 import React from 'react';
-import { Dimensions, ImageBackground, ImageProps, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {Dimensions, ImageBackground, ImageProps, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { BORDERRADIUS, COLORS, FONTFAMILY, FONTSIZE, SPACING } from '../theme/theme';
+import {BORDERRADIUS, COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme';
 import CustomIcon from './CustomIcon';
 import BGIcon from './BGIcon';
 
@@ -34,11 +34,10 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
 }) => {
     return (
         <LinearGradient
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
+            start={{x: 0, y: 0}}
+            end={{x: 1, y: 1}}
             style={styles.CardLinearGradientContainer}
-            colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}
-        >
+            colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}>
             <ImageBackground source={imagelink_square} style={styles.CardImageBG} resizeMode="cover">
                 <View style={styles.CardRatingContainer}>
                     <CustomIcon name={'star'} color={COLORS.primaryOrangeHex} size={FONTSIZE.size_16} />
@@ -61,10 +60,9 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
                             imagelink_square,
                             name,
                             special_ingredient,
-                            prices: [{ ...price, quantity: 1 }],
+                            prices: [{...price, quantity: 1}],
                         });
-                    }}
-                >
+                    }}>
                     <BGIcon
                         color={COLORS.primaryWhiteHex}
                         name={'add'}

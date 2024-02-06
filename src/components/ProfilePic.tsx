@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Image, View } from 'react-native';
-import { COLORS, SPACING } from '../theme/theme';
+import {StyleSheet, Image, View} from 'react-native';
+import {COLORS, SPACING} from '../theme/theme';
 
 const ProfilePic = () => {
     return (

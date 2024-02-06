@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
     },
     CartItemQuantityContainer: {
         backgroundColor: COLORS.primaryBlackHex,
-        width: 50,
+        width: 80,
         borderRadius: BORDERRADIUS.radius_10,
         borderWidth: 2,
         borderColor: COLORS.primaryOrangeHex,

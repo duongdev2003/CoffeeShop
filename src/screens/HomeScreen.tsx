@@ -106,6 +106,7 @@ const HomeScreen = ({navigation}: any) => {
                 <Text style={styles.ScreenTitle}>Find the best{'\n'}coffee for you</Text>
 
                 {/* Search Input */}
+
                 <View style={styles.InputContainerComponent}>
                     <TouchableOpacity
                         onPress={() => {
@@ -146,6 +147,7 @@ const HomeScreen = ({navigation}: any) => {
                 </View>
 
                 {/* Category Scroller */}
+
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
@@ -176,6 +178,7 @@ const HomeScreen = ({navigation}: any) => {
                 </ScrollView>
 
                 {/* Coffee Flatlist */}
+
                 <FlatList
                     ref={ListRef}
                     horizontal
@@ -218,6 +221,7 @@ const HomeScreen = ({navigation}: any) => {
                 <Text style={styles.CoffeeBeansTitle}>Coffee Beans</Text>
 
                 {/* Beans Flatlist */}
+
                 <FlatList
                     horizontal
                     showsHorizontalScrollIndicator={false}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native';
+import {ScrollView, StatusBar, StyleSheet, Text, View, TouchableWithoutFeedback, TouchableOpacity} from 'react-native';
 import {useStore} from '../store/store';
 import {BORDERRADIUS, COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme';
 import ImageBackgroundInfo from '../components/ImageBackgroundInfo';
@@ -9,10 +9,8 @@ const DetailsScreen = ({navigation, route}: any) => {
     const ItemOfIndex = useStore((state: any) => (route.params.type == 'Coffee' ? state.CoffeeList : state.BeanList))[
         route.params.index
     ];
-
     const addToFavoriteList = useStore((state: any) => state.addToFavoriteList);
     const deleteFromFavoriteList = useStore((state: any) => state.deleteFromFavoriteList);
-
     const addToCart = useStore((state: any) => state.addToCart);
     const calculateCartPrice = useStore((state: any) => state.calculateCartPrice);
 
@@ -61,6 +59,7 @@ const DetailsScreen = ({navigation, route}: any) => {
                     BackHandler={BackHandler}
                     ToggleFavourite={ToggleFavourite}
                 />
+
                 <View style={styles.FooterInfoArea}>
                     <Text style={styles.InfoTitle}>Description</Text>
                     {fullDesc ? (
